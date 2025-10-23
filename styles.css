@@ -1,0 +1,47 @@
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 800px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    border: 1px solid black;
+    box-sizing: border-box;
+    
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    margin-left: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(47, 61, 255);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: opacity 0.3s ease;
+
+}
+
+button:hover {
+    opacity: 80%;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+button:active {
+    opacity: 40%;
+}
