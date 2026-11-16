@@ -1,41 +1,100 @@
-# Etch-a-Sketch
+<div align="center">
 
+# 🎨 Etch-a-Sketch
 
+A browser sketch pad made with **HTML, CSS and vanilla JavaScript**: move your mouse over the grid and draw a pixelated trail.
 
-    1. Follow our instructions on setting up your project’s GitHub repository.
-    
-    2. Create a webpage with a 16x16 grid of square divs.
-        - Create the divs using JavaScript. Don’t try to create them by hand by copying and pasting them in your HTML file!
-        - It’s best to put your grid squares inside a “container” div. This div can be written in your HTML file.
-        - Use Flexbox to make the divs appear as a grid (versus just one on each line). Despite the name, do not be tempted to research or use CSS Grid, as it will be taught in a later lesson after the foundations path. This project is an opportunity specifically to practice Flexbox!
-        - Be careful with borders and margins, as they can adjust the size of the squares!
-        - “OMG, why isn’t my grid being created???”
-            - Did you link your CSS stylesheet?
-            - Open your browser’s developer tools.
-            - Check if there are any errors in the JavaScript console.
-            - Check your “elements” panel to see if the elements have actually shown up but are somehow hidden.
-            - Go willy-nilly and add console.log statements in your JavaScript to - see if it’s actually being loaded.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![Status](https://img.shields.io/badge/status-completed-brightgreen?style=for-the-badge)
 
-    3. Set up a “hover” effect so that the grid divs change color when your mouse passes over them, leaving a (pixelated) trail through your grid like a pen would.
-        - Hint: “Hovering” is what happens when your mouse enters a div and ends when your mouse leaves it. You can set up event listeners for either of those events as a starting point.
-        - There are multiple ways to change the color of the divs, including:
-            - Adding a new class to the div.
-            - Changing the div’s background color using JavaScript.
+<!-- Add a screenshot or GIF of your sketch pad here:
+<img src="./screenshot.png" alt="Etch-a-Sketch preview" width="420" />
+-->
 
-    4. Add a button on the top of the screen that will send the user a popup asking for the number of squares per side for the new grid. Once entered, the existing grid should be removed, and a new grid should be generated in the same total space as before (e.g., 960px wide) so that you’ve got a new sketch pad.
-        - Tip: Set the limit for the user input to a maximum of 100. A larger number of squares results in more computer resources being used, potentially causing delays, freezing, or crashing that we want to prevent.
-        - Research button tags in HTML and how you can make a JavaScript function run when one is clicked.
-        - Also check out prompts.
-        - You should be able to enter 64 and have a brand new 64x64 grid pop up without changing the total amount of pixels used.
-    5. Push your project to GitHub!
+<!-- If you enable GitHub Pages (Settings > Pages), add the live demo link:
+[🔗 **Live demo**](https://sousini.github.io/Etch-a-Sketch/)
+-->
 
-## Extra credit
+</div>
 
-Transform the behavior of a square when interacting with the mouse by introducing a series of modifications.
+---
 
-    1. Rather than squares being the same color throughout the grid, randomize the squares’ RGB values with each interaction.
+## ✨ Features
 
-    2. Additionally, implement a progressive darkening effect where each interaction darkens the square by 10%. The goal is to achieve a fully black (or completely colored) square in only ten interactions.
-        Hint: The opacity CSS property is useful here. To learn how to use it, check this MDN docs article about the opacity CSS property.
+- 🧱 A **16x16 grid** of square divs, created entirely with JavaScript
+- 🖱️ **Hover effect**: squares change colour when the mouse passes over them, leaving a pixelated trail like a pen
+- 🔘 **New grid button**: asks for the number of squares per side (maximum **100**) and generates a fresh grid
+- 📐 The grid always **keeps the same total size** (e.g. 960px), no matter how many squares it has
+- 📦 Layout built with **Flexbox**
 
-You can choose to do either one or both of these challenges, it’s up to you.
+### ⭐ Extra features
+
+<!-- Tick the ones you implemented: [x] done, [ ] not done -->
+
+- [ ] Random RGB colour for each square on every interaction
+- [ ] Progressive darkening: each interaction darkens the square by 10% until it is fully black
+
+---
+
+## 📁 Project structure
+
+```
+Etch-a-Sketch/
+├── .vscode/
+├── index.html    # Page layout: button and grid container
+├── styles.css    # Styling and Flexbox grid
+├── script.js     # Grid creation, hover effect and new grid logic
+└── README.md
+```
+
+---
+
+## 🚀 How to run
+
+No installation or build step needed.
+
+```bash
+# Clone the repository
+git clone https://github.com/Sousini/Etch-a-Sketch.git
+cd Etch-a-Sketch
+
+# Open index.html in your browser
+```
+
+Or just double-click `index.html`.
+
+---
+
+## 🎮 How to use
+
+1. Move the mouse over the grid to draw.
+2. Click the **button** at the top and enter a number from 1 to 100.
+3. A new grid with that many squares per side appears, in the same total space.
+
+---
+
+## 🛠️ Built with
+
+- **HTML5**: structure
+- **CSS3 (Flexbox)**: grid layout and styling
+- **JavaScript (ES6)**: DOM manipulation, events and prompts
+
+---
+
+## 🎯 What I learned
+
+- Creating and removing DOM elements with JavaScript
+- Handling mouse events (`mouseenter` / `mouseover`)
+- Building layouts with Flexbox
+- Keeping a fixed container size while changing the number of children
+
+---
+
+## 👤 Author
+
+**João Sousa**
+
+[![GitHub](https://img.shields.io/badge/GitHub-Sousini-181717?style=for-the-badge&logo=github)](https://github.com/Sousini)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jo%C3%A3o-sousa-63ab4537a/)
